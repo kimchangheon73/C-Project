@@ -1,5 +1,3 @@
-# C-Project
-
 # What is C Programing?
 ==> bulid by Dennis Ritchie of Bell laboratory
 
