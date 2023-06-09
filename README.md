@@ -1,11 +1,11 @@
-# What is C Programing?
-==> bulid by Dennis Ritchie of Bell laboratory
+# C언어란?
+==> Dennis Ritchie가 만든 컴파일 언어<br><br>
 
-# How to run C.exe file ?
---> Step 1 : make Source File(*.c) <br>
---> Step 2 : Compile (*.obj) <br>
---> Step 3 : linked and Loader (*.exe) <br>
---> Step 4 : Execution  <br>
+# C파일의 동작과정
+--> Step 1 : 프로그래머가 소스코드를 직접 작성한다. <br>
+--> Step 2 : 컴파일러를 통해 소스코드를 컴파일 한다 <br>
+--> Step 3 : 링크와 로더를 이용해 코드와 헤더파일을 연결하고 실행파일을 생성한다.<br>
+--> Step 4 : 파일이 실행된다<br>
 
 # Confirm
---> You must write ";" on end of each code linked
+--> 코드의 마지막에는 항상 세미콜론(;)을 적시
