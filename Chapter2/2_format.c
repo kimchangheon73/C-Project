@@ -23,6 +23,7 @@ void float_format(){
     printf("a = %d ----> memory = %dbytes\n", a, sizeof(a));
     printf("b = %.2f----> memory = %dbytesq\n", b, sizeof(b));
 
-
 }
+
+
 
