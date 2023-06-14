@@ -90,12 +90,37 @@ int mission28(){
         printf("Value of a[%d] = %d\n", i, a[i]);
         printf("Value of b+%d  = %d\n\n", i, *(b+i));
     }
+}
 
+// 미션 29 : char 배열 a에 포인터 변수 b를 이용해 각 요소에 접근하고 출력하기
+int mission29(){
+    char name[] = "kimchangheon";
 
+    for(int i=0; i<12; i++){
+        printf("%c",name[i]);
+    }
+    
+    printf("\n");
+    
+    for(int i=0; i<12; i++){
+        printf("Address of name[%d] = {%d} \t Value = {%c}\n", i, &name[i], name[i]);
+    }
+
+    char *b = name;
+
+    for(int i=0; i<12; i++){
+        printf("%c",*(b+i));
+    }
+
+    printf("\n");
+
+    for(int i=0; i<12; i++){
+        printf("Address of b+%d = {%d} \t Value = {%c}\n", i, (b+i), *(b+i));
+    }
 
 }
 
 int main(){
-    mission28();
+    mission29();
 
 }
