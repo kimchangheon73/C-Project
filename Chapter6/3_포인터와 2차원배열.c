@@ -144,16 +144,41 @@ int mission34(){
     int a[] = {1, 2, 3, 4, 5};
     int *b = &a[0];
 
+    printf("=============== Before ===============\n");
     for(int i=0; i<5; i++){
-        *(b+i) = *(b+i) * 10; 
-    }
-    
-    for(int i=0; i<5; i++){
-        *(b+i) = *(b+i) * 10; 
+        printf("a[%d] = %d\n", i, a[i]);
     }
 
+    for(int i=0; i<5; i++){
+        *(b+i) = *(b+i) * 10; 
+    }
+    printf("=============== After ===============\n");
+    for(int i=0; i<5; i++){
+        printf("a[%d] = %d\n", i, a[i]);
+    }
+}
+
+int mission35(){
+    int a[] = {1,2,3,4,5,6};
+    int *b = &a[0];
+    int *c = &a[5];
+
+    printf("=============== Origin A ===============\n");
+    for(int i=0; i<6; i++){
+        printf("%d ", i, a[i]);
+    }
+
+    for(int i=0; i<3; i++){
+        int temp = *(b+i);
+        *(b+i) = *(c-i);
+        *(c-i) = temp;
+    }
+    printf("\n=============== After A ===============\n");
+    for(int i=0; i<6; i++){
+        printf("%d ",a[i]);
+    }
 }
 
 int main(){
-    mission33();
+    mission35();
 }
